@@ -4,22 +4,15 @@ FileScout monitors a folder and automatically sorts files into subfolders based 
 
 ---
 
-## Project Structure
+---
 
-```
-filescout/
-├── main.py              ← Entry point (run this)
-├── settings.json        ← All configuration (edit here)
-│
-├── core/
-│   ├── config.py        ← Loads and validates settings.json
-│   ├── organizer.py     ← File classification + move logic
-│   ├── watcher.py       ← Polls directory for new files
-│   └── shell.py         ← Interactive terminal interface
-│
-└── utils/
-    └── logger.py        ← Colored console + file logging
-```
+## 📸 Preview
+
+<p align="center">
+  <img src="assets/snap.png" alt="FileScout Preview" width="750"/>
+</p>
+
+---
 
 ---
 

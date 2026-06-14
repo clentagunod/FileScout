@@ -12,6 +12,7 @@ When run with arguments, it pre-fills the command and then enters the shell.
 
 import sys
 import os
+import time
 
 # ── Make sure project root is on the path (so sub-modules resolve) ────────────
 sys.path.insert(0, os.path.dirname(__file__))

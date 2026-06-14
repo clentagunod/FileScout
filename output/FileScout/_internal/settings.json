@@ -1,0 +1,83 @@
+{
+  "_comment": "FileScout Settings — Edit this file to customize behavior.",
+
+  "app": {
+    "name": "FileScout",
+    "version": "1.0.0",
+    "prompt_symbol": ">>",
+    "log_to_file": true,
+    "log_filename": "filescout.log",
+    "poll_interval_seconds": 3
+  },
+
+  "rename": {
+    "enabled": true,
+    "date_format": "%Y-%m-%d",
+    "separator": "_",
+    "preserve_original_name": true,
+    "example": "2025-06-14_report.pdf"
+  },
+
+  "duplicate_handling": {
+    "strategy": "rename",
+    "_strategy_options": ["rename", "skip", "overwrite"],
+    "suffix_format": "({n})"
+  },
+
+  "rules": [
+    {
+      "name": "Documents",
+      "extensions": [".pdf", ".doc", ".docx", ".txt", ".odt", ".rtf"],
+      "destination_folder": "Documents",
+      "enabled": true
+    },
+    {
+      "name": "Images",
+      "extensions": [".jpg", ".jpeg", ".png", ".gif", ".bmp", ".webp", ".svg", ".tiff"],
+      "destination_folder": "Images",
+      "enabled": true
+    },
+    {
+      "name": "Spreadsheets",
+      "extensions": [".xlsx", ".xls", ".csv", ".ods"],
+      "destination_folder": "Spreadsheets",
+      "enabled": true
+    },
+    {
+      "name": "Videos",
+      "extensions": [".mp4", ".mov", ".avi", ".mkv", ".wmv", ".flv"],
+      "destination_folder": "Videos",
+      "enabled": true
+    },
+    {
+      "name": "Audio",
+      "extensions": [".mp3", ".wav", ".flac", ".aac", ".ogg", ".m4a"],
+      "destination_folder": "Audio",
+      "enabled": true
+    },
+    {
+      "name": "Archives",
+      "extensions": [".zip", ".rar", ".7z", ".tar", ".gz", ".bz2"],
+      "destination_folder": "Archives",
+      "enabled": true
+    },
+    {
+      "name": "Presentations",
+      "extensions": [".ppt", ".pptx", ".odp", ".key"],
+      "destination_folder": "Presentations",
+      "enabled": true
+    },
+    {
+      "name": "Code",
+      "extensions": [".py", ".js", ".ts", ".html", ".css", ".java", ".cpp", ".c", ".sh", ".json"],
+      "destination_folder": "Code",
+      "enabled": false
+    }
+  ],
+
+  "ignore": {
+    "hidden_files": true,
+    "temp_extensions": [".tmp", ".part", ".crdownload", ".download"],
+    "filenames": [".DS_Store", "Thumbs.db", "desktop.ini"]
+  }
+}
